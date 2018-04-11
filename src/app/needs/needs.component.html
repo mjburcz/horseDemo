@@ -1,0 +1,19 @@
+
+<div *ngIf="horse">
+    <hr/>
+    <h2>Needs for {{ horse.name | capitalize }}</h2>
+
+    <table class="table table-hover needs-table" 
+           *ngFor="let need of needs">
+        <tr *ngFor="let needItem of need.horseItems">
+            <td>{{ needItem.needName }}</td>
+            <td>{{ needItem.needCost | currency:'USD':'symbol' }}</td>    
+        </tr>
+    </table>
+</div>
+<div *ngIf="!horse">
+   No horse found
+</div>  
+<br />
+<a routerLink="/horses">View All Horses</a>
+

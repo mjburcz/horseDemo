@@ -1,0 +1,34 @@
+<filter-textbox (changed)="filter($event)"></filter-textbox>
+<br />
+<br />
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th (click)="sort('name')">Name</th>
+            <th (click)="sort('color')">Color</th>
+            <th (click)="sort('dob')">Date of Birth</th>
+            <th (click)="sort('needTotal')">Monthly Cost</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let horse of filteredHorses">
+        <td>
+            <a [routerLink]="['/needs', horse.id]">
+                {{ horse.name | capitalize }}
+            </a>
+        </td>
+        <td>{{ horse.color }}</td>
+        <td>{{ horse.dob }}</td>
+        <td>{{ horse.needTotal | currency:currencyCode:'symbol' }}
+    </tr>
+    <tr *ngIf="filteredHorses && filteredHorses.length">
+        <td colspan="3">&nbsp;</td>
+        <td>
+            {{ horsesNeedTotal | currency:currencyCode:'symbol' }}
+        </td>
+    </tr>
+    <tr *ngIf="!filteredHorses || !filteredHorses.length">
+        <td colspan="4">No horses found</td>
+    </tr>
+</table>
+Number of Horses: {{ filteredHorses.length }}
+<br />
