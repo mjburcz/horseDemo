@@ -34,7 +34,7 @@
             ]
       },
       {
-            "customerId": 5,
+            "horseId": 5,
             "horseItems": [
                   {"id": 15, "needName": "Board", "needCost": 150.00},
                   {"id": 16, "needName": "Vet", "needCost": 50.00},
@@ -72,5 +72,14 @@
                   {"id": 28, "needName": "Suppliments", "needCost": 300.00},
                   {"id": 29, "needName": "Chiropractor", "needCost": 100.00}
             ]
+      },
+      {
+            "horseId": 10,
+            "horseItems": [
+                  {"id": 30, "needName": "Board", "needCost": 5000.00},
+                  {"id": 31, "needName": "Bling", "needCost": 4000.00},
+                  {"id": 32, "needName": "Chiropractor", "needCost": 1000.00}
+            ]
       }
+
 ]

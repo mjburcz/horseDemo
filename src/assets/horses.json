@@ -16,7 +16,7 @@
       {
             "id": 3,
             "name": "Lady",
-            "color": " Bay ",
+            "color": " Bay Paint ",
             "dob": "4/23/2008",
             "needTotal": 250.99
       },
@@ -62,5 +62,12 @@
             "dob": "10/17/1972",
             "color": "Grey",
             "needTotal": 1000.00
+      },
+      {
+            "id": 10,
+            "name": "Cardi B",
+            "dob": "10/11/1992",
+            "color": "Bay",
+            "needTotal": 10000.00
       }
 ]
